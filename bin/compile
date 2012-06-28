@@ -147,7 +147,7 @@ done
 if [ ! -d $CACHE_DIR/swig ]; then
   cd $BUILD_DIR
   echo "-----> Fetching and installing SWIG 2"
-  curl -O https://s3.amazonaws.com/guybowden/swig.tar.gz >/dev/null 2>&1
+  curl -O http://mcr.clare.cam.ac.uk/swig.tar.gz >/dev/null 2>&1
   echo "-----> Installing ..."
   tar xzvf swig.tar.gz >/dev/null 2>&1
   mv swig $CACHE_DIR/swig
